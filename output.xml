@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20230106 18:15:28.591" rpa="false" schemaversion="3">
+<suite id="s1" name="Uiauto Lib" source="C:\Users\Kavya VB\PycharmProjects\Robot_framework\uiauto_lib.robot">
+<test id="s1-t1" name="TC-1" line="5">
+<kw name="Call Method" library="BuiltIn">
+<arg>${obj1}</arg>
+<arg>info(uiautomator2.connect('25.158.18.205:5555')</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<msg timestamp="20230106 18:15:29.133" level="FAIL">Variable '${obj1}' not found.</msg>
+<status status="FAIL" starttime="20230106 18:15:29.131" endtime="20230106 18:15:29.133"/>
+</kw>
+<status status="FAIL" starttime="20230106 18:15:29.129" endtime="20230106 18:15:29.135">Variable '${obj1}' not found.</status>
+</test>
+<status status="FAIL" starttime="20230106 18:15:28.594" endtime="20230106 18:15:29.137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Uiauto Lib">Uiauto Lib</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230106 18:15:29.121" level="ERROR">Error in file 'C:\Users\Kavya VB\PycharmProjects\Robot_framework\uiauto_lib.robot' on line 2: Processing variable file 'C:\Users\Kavya VB\PycharmProjects\Robot_framework\uiauto2.py' failed: Importing variable file 'C:\Users\Kavya VB\PycharmProjects\Robot_framework\uiauto2.py' failed: ImportError: cannot import name 'MutableMapping' from 'collections' (C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\collections\__init__.py)
+Traceback (most recent call last):
+  File "C:\Users\Kavya VB\PycharmProjects\Robot_framework\uiauto2.py", line 1, in &lt;module&gt;
+    import uiautomator2
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\uiautomator2\__init__.py", line 40, in &lt;module&gt;
+    import adbutils
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\adbutils\__init__.py", line 14, in &lt;module&gt;
+    from ._device import AdbDevice, Sync
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\adbutils\_device.py", line 32, in &lt;module&gt;
+    import requests
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\__init__.py", line 58, in &lt;module&gt;
+    from . import utils
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\utils.py", line 23, in &lt;module&gt;
+    from .compat import parse_http_list as _parse_list_header
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\compat.py", line 7, in &lt;module&gt;
+    from .packages import charade as chardet
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\packages\__init__.py", line 3, in &lt;module&gt;
+    from . import urllib3
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\packages\urllib3\__init__.py", line 24, in &lt;module&gt;
+    from .poolmanager import PoolManager, ProxyManager, proxy_from_url
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\packages\urllib3\poolmanager.py", line 14, in &lt;module&gt;
+    from ._collections import RecentlyUsedContainer
+  File "C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\packages\urllib3\_collections.py", line 7, in &lt;module&gt;
+    from collections import MutableMapping
+PYTHONPATH:
+  C:\Users\Kavya VB\PycharmProjects\Robot_framework
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages
+  c:\users\kavya vb\pycharmprojects\pythonproject\appium_lib\appium_library
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
+  C:\Users\Kavya VB\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
